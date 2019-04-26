@@ -1,9 +1,9 @@
 
 language: csharp
-dist: trusty
+dist: xenial
 mono: none
-dotnet: 2.0.0
+dotnet: 2.2.0
 script:
-  - cd netcoredemo
+  - cd netcore2.2\netcore2.2
   - dotnet restore
   - dotnet build
