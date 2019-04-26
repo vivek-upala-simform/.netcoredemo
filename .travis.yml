@@ -1,7 +1,8 @@
 
 language: csharp
-dist: trusty
+dist: xenial
 mono: none
+sudo: required
 dotnet: 2.2.0
 script:
   - cd netcore2.2\netcore2.2
