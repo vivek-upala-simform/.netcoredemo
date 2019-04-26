@@ -1,6 +1,6 @@
 
 language: csharp
-dist: xenial
+dist: bionic
 mono: none
 dotnet: 2.2.0
 script:
