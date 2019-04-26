@@ -3,7 +3,9 @@ language: csharp
 dist: trusty
 mono: none
 dotnet: 2.0.0
-script:
+if: [branch = master]; then
+script:   
   - cd netcoredemo
   - dotnet restore
   - dotnet build
+fi
