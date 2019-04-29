@@ -5,6 +5,9 @@ mono: none
 dotnet: 2.0.0
 script:
   - if [ $TRAVIS_BRANCH == 'develop' ]; then 
-    echo $TRAVIS_BRANCH ; 
-    fi;    
+    cd netcoredemo;
+    dotnet restore;
+    dotnet build;
+    fi;  
+  
   
