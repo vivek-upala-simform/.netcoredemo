@@ -4,7 +4,8 @@ dist: trusty
 mono: none
 dotnet: 2.0.0
 script:   
+  - echo $TRAVIS_BRANCH
   - cd netcoredemo
   - dotnet restore
   - dotnet build
-
+  
