@@ -8,7 +8,7 @@ namespace demo.test
         [Fact]
         public void Sum()
         {
-            int expected = 5;
+            int expected = 6;
             int actual = MathService.Add(2, 3);
             Assert.Equal(expected, actual);
         }
