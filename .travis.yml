@@ -4,10 +4,11 @@ dist: trusty
 mono: none
 dotnet: 2.0.0
 script:
-  - if [ $TRAVIS_BRANCH == 'develop' ]; then 
-    cd netcoredemo;
-    dotnet restore;
-    dotnet build;
-    fi;  
+  - cd netcoredemo;
+  - dotnet restore;
+  - dotnet build;
+  - dotnet test 
+  - cd ..\demo.test
+  - dotnet test demo.test.csproj    
   
   
