@@ -6,6 +6,12 @@ namespace netcoredemo.Service
 {
     public class MathService
     {
+        /// <summary>
+        /// This function will perform the addition of the specified argument.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static int Add(int a,int b)
         {
             return a + b;
